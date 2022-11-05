@@ -1,1 +1,8 @@
 env/
+config.py
+__pycache__/
+test.ipynb
+something.py
+
+.cache
+token.txt
