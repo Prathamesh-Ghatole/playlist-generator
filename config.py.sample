@@ -1,14 +1,16 @@
 # Add configuration details for the app in this file.
 # Register your app at https://developer.spotify.com/documentation/web-api/ and get the keys and tokens.
 
-SPOTIPY_CLIENT_ID = ""          # Enter your spotify client ID
-SPOTIPY_CLIENT_SECRET = ""      # Enter your spotify client secret
-SPOTIFY_USER_ID = ""            # Enter your spotify user ID (not username)
-
+SPOTIFY_CLIENT_ID = ""
+SPOTIFY_CLIENT_SECRET = ""
+SPOTIFY_REDIRECT_URI = "http://localhost:8888/callback"
+SPOTIFY_USER_ID = ""
 # Don't share the above IDs in public.
 
 if __name__ == "__main__":
-# Run this script to automatically setup the environment variables.
+    # Run this script to automatically setup the environment variables.
     import os
-    os.environ["SPOTIPY_CLIENT_ID"] = SPOTIPY_CLIENT_ID
-    os.environ["SPOTIPY_CLIENT_SECRET"] = SPOTIPY_CLIENT_SECRET
+
+    os.environ["SPOTIPY_CLIENT_ID"] = SPOTIFY_CLIENT_ID
+    os.environ["SPOTIPY_CLIENT_SECRET"] = SPOTIFY_CLIENT_SECRET
+    os.environ["SPOTIFY_REDIRECT_URL"] = SPOTIFY_REDIRECT_URI
