@@ -1,6 +1,7 @@
 env/
 config.py
 __pycache__/
+lib/__pycache__/
 test.ipynb
 something.py
 
