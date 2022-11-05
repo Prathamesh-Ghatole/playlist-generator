@@ -19,7 +19,7 @@ def verify_auth(sp) -> None:
         time.sleep(2)
         console.clear()
     except:
-        console.print("Authentication failed!", style="bold red")
+        console.print("\nAuthentication failed!", style="bold red")
         time.sleep(2)
         sys.exit(1)
         # console.clear()
