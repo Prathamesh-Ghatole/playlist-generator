@@ -30,7 +30,6 @@
 ### 💻 **Technologies Used**:
 - Python
 - Flask
-- SQLite (DBMS)
 - Bootstrap (HTML, CSS, JaveScript)
 - Pandas
 - Requests, Requests with Caching
@@ -43,6 +42,10 @@
 1. Clone the repository
 2. Create a virtual environment using  
    ```python3 -m venv env```
-3. Install dependencies using
+3. Activate the virtual environment using  
+   ```source env/bin/activate```
+4. Install dependencies using
     ```pip install -r requirements.txt```
-4. _To be continued_
+5. Copy config.py.sample to config.py and add your Spotify API credentials
+6. Run the app using 
+   ```python app.py```
